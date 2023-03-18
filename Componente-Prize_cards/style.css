@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayishBlue: hsl(234, 14%, 74%);
+    --GrayishBlue: hsl(233, 13%, 49%);
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--VeryLightGrayishBlue);
+    background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 26.5%, 26.5%;
+    background-position: top 0 right -1rem, bottom -4.7rem left -1.9rem;
+}
+
+
+
+
+.body_h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: gray;
+}
+
+.grid_container {
+    width: 50%;
+    display: grid;
+    grid-area: 'card1 card2 card3';
+    grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+.grid_container__box1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(188, 191, 239) 0%, rgb(197, 200, 245) 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 700px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.grid_container__box2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(105, 111, 221, 1) 0%, rgba(163, 168, 240, 1) 100%);
+    border-radius: 10px;
+    height: 750px;
+    margin-bottom: 150px;
+    margin-top: 1px;
+}
+
+.grid_container__box3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(188, 191, 239) 0%, rgb(197, 200, 245) 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 700px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.grid_container__box1--h3,
+.grid_container__box3--h3   {
+    font-size: 1.5em;
+    color: gray;
+}
+
+.grid_container__box1--p {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 20px;
+}
+.grid_container__box2--p,
+.grid_container__box3--p {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 20px;
+}
+
+
+
+.grid_container__box1_precio,
+.grid_container__box3_precio
+ {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(54, 50, 50);
+}
+
+.grid_container__box1_datos,
+.grid_container__box3_datos {
+    font-size: 1.5em;
+    color: gray;
+}
+
+.grid_container__box2--h3,
+.grid_container__box2_datos {
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+.grid_container__box2_precio {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.grid_container__button {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    background: linear-gradient(0deg, rgba(105, 111, 221, 1) 0%, rgba(163, 168, 240, 1) 100%);
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.grid_container__button_medio {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+    height: 20px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background-size: 15%, 15%;
+      background-position: top 0 right -0.5rem, bottom -2.7rem left -0.9rem;
+    }
+    
+    .grid_container {
+      width: 90%;
+      grid-template-columns: 100%;
+    }
+  
+    .grid_container__box1, 
+    .grid_container__box3 {
+      height: auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      border-radius: 0;
+    }
+  
+    .grid_container__box2 {
+      height: auto;
+      margin-bottom: 30px;
+      margin-top: 1px;
+    }
+  
+    .grid_container__box1--h3, 
+    .grid_container__box2--h3, 
+    .grid_container__box3--h3 {
+      font-size: 1.2em;
+    }
+  
+    .grid_container__box1_precio, 
+    .grid_container__box2_precio, 
+    .grid_container__box3_precio {
+      font-size: 2em;
+    }
+  
+    .grid_container__box1_datos, 
+    .grid_container__box2_datos, 
+    .grid_container__box3_datos {
+      font-size: 1.2em;
+    }
+  
+    .grid_container__button, 
+    .grid_container__button_medio {
+      width: 60%;
+      margin-top: 10px;
+      font-size: 1em;
+    }
+  }
+  
