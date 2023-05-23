@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: rgb(242, 238, 238);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.webServices__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    gap: 50px;
+}
+
+.webServices__container-service1 {
+    padding-left: 500px;
+    margin-top: 20px;
+}
+
+.webServices__container-service2 {
+    padding-right: 500px;
+    margin-top: 20px;
+}
+
+
+.webServices__container-service3 {
+    padding-left: 500px;
+    margin-bottom: 20px;
+}
+
+
+.webServices__container-service4 {
+    padding-right: 500px;
+    margin-bottom: 20px;
+}
+
+.webService__title {
+    display: flex;
+}
+
+.webService__title img {
+    padding: 15px;
+    background-color: rgb(132, 69, 132);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.webServices__container-service1 a {
+   color: rgb(129, 53, 129);
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.webServices__container-service2 a {
+    color: rgb(129, 53, 129);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.webServices__container-service3 a {
+    color: rgb(129, 53, 129);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.webServices__container-service4 a {
+    color: rgb(129, 53, 129);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recentArticles__title {
+    text-align: center;
+    padding: 50px;
+}
+
+.recentArticles__gridContainer {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.recentArticles__gridContainer img {
+    width: 100%;
+}
+
+.recentArticles__gridContainer p {
+   text-align: center;
+   padding: 20px;
+}
+
+.recentArticles__gridContainer article p:nth-child(2) {
+    color: gray;
+ }
+
+.footer__container {
+    background-color: rgb(132, 69, 132);
+    text-align: center;
+    color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-top: 30px;
+}
+
+.footer__container h1 {
+    font-size: 20px;
+}
+
+.footer__container p {
+    font-size: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer__buttonContainer {
+    padding: 30px;
+}
+
+.footer__buttonContainer button {
+   border-radius: 20px;
+   border: 1px solid white;
+   margin-right: 10px;
+   height: 30px;
+   background-color: rgb(132, 69, 132);
+   color: white;
+   font-weight: bold;
+
+}
+
+.buttonContainer__buttonA:hover {
+    background-color: black;
+}
+
+.buttonContainer__buttonB:hover {
+    background-color: white;
+    color: rgb(132, 69, 132); ;
+}
+
+@media (max-width: 450px) {
+    .webServices__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        gap: 50px;
+    }
+
+    .webService__title {
+        display: block;
+        text-align: center;
+    }
+
+    .webServices__container-service1 a {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .webServices__container-service1 p {
+        text-align: center;
+      }
+     
+     .webServices__container-service2 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .webServices__container-service2 p {
+        text-align: center;
+      }
+     
+     
+     
+     .webServices__container-service3 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .webServices__container-service3 p {
+        text-align: center;
+      }
+     
+     
+     
+     .webServices__container-service4 a {
+        display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .webServices__container-service4 p {
+        text-align: center;
+      }
+     
+    
+
+    
+    .webServices__container-service1 {
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .webServices__container-service2 {
+        padding-right: 0px;
+        margin-top: 20px;
+    }
+    
+    
+    .webServices__container-service3 {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .webServices__container-service4 {
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .recentArticles__gridContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    .footer__container {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 30px;
+    }
+    
+}
